@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+
+	  <link rel="stylesheet" href="node_modules/bulma/css/bulma.css">
+
+	  <script src="node_modules/jquery/dist/jquery.js"></script>
+	  <script src="node_modules/lodash/lodash.js"></script>
+
+	  <script src="js/ver-carrito.js"></script>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Catalogo</title>
+</head>
+
+	<body>
+		
+		<nav class="navbar is-dark ">
+		  <div class="navbar-brand">
+		    <p class="navbar-item" >
+		      Carrito
+		    </p>
+		    
+		  </div>
+		  <div id="navbarExampleTransparentExample" class="navbar-menu  is-active">
+		    <div class="navbar-start">
+		     
+		      <div class="navbar-item has-dropdown is-hoverable">
+		        <a class="navbar-link" href="">
+		          Menu
+		        </a>
+		        <div class="navbar-dropdown is-boxed">
+		          
+		         
+		          <a class="navbar-item" href="index.html">
+		            Shop
+		          </a>
+
+		          <a class="navbar-item" href="contacto.html">
+		            Contact
+		          </a>
+
+		          <a class="navbar-item is-active" href="ver-carrito.html">
+		            Cart
+		          </a>
+
+		        </div>
+		      </div>
+		    </div>	    
+		  </div>
+		</nav>
+
+		<section class="hero is-info">
+		  <div class="hero-body">
+		    <p class="title">
+		      Cart
+		    </p>
+		    <p class="subtitle">
+				Product List
+		    </p>
+		  </div>
+		</section>
+
+	  <section class="section">
+	    <div id="ppal" class="container">
+	    	<div id="cols" class="columns is-multiline">
+			</div>
+	    </div>
+	  </section>
+
+	  <section id="comprar" class="section">
+	    <div class="container">
+	    	<div class="columns is-centered">
+				<div class="column">
+					<div class="box has-text-centered">
+						  <a id="showModal" class="button is-large is-primary"  >
+						   	<span class="icon">
+								<i class="fa fa-shopping-cart"></i>
+							</span>
+						    <span>COMPRAR</span>
+						  </a>
+					</div>
+				</div>
+			</div>
+	    </div>
+	  </section>
+
+	  <div class="modal">
+		  <div class="modal-background"></div>
+		  <div class="modal-card">
+		    <header class="modal-card-head">
+		      <p class="modal-card-title">CONFIRMAR COMPRA</p>
+		      <button class="delete" aria-label="close"></button>
+		    </header>
+		    <footer class="modal-card-foot">
+		      <button class="button is-success salir" onclick="checkOut(this)">Confirmar</button>
+		      <button class="button salir">Cancelar</button>
+		    </footer>
+		  </div>
+		</div>
+
+	</body>
+</html>
